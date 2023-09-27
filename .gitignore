@@ -1,0 +1,7 @@
+# Compose
+vendor/
+composer.phar
+
+# IDE folders
+.idea/
+.vscode/

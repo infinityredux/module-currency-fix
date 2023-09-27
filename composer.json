@@ -1,0 +1,24 @@
+{
+  "name": "infinityredux/module-currency-fix",
+  "description": "Resolve an apparent issue causing currency to disappear in some themes.",
+  "type": "magento2-module",
+  "require": {
+    "magento/module-directory": ">=100.4.3"
+  },
+  "repositories": [
+    {"type": "composer", "url": "https://repo.magento.com"}
+  ],
+  "config": {
+    "allow-plugins": {
+      "magento/composer-dependency-version-audit-plugin": true
+    }
+  },
+  "autoload"    : {
+    "files"         : [
+      "src/registration.php"
+    ],
+    "psr-4"         : {
+      "InfinityRedux\\CurrencyFix\\": "src"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Override to modify single function, since need to change implementation
+         to prevent a function call. -->
+    <preference for="Magento\Directory\Model\Currency"
+                type="InfinityRedux\CurrencyFix\Override\FormatTextFix" />
+
+</config>
